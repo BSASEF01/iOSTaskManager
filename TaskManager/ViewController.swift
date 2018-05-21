@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =
-            tableView.dequeueReusableCell(withIdentifier: "TaskableViewcell") as! TableViewCell
+            tableView.dequeueReusableCell(withIdentifier: "taskCell") as! TaskableViewcell
         cell.setUpCell(task:TaskManager.sharedInstance.getTask(index: indexPath.row))
         return cell
     }
@@ -40,9 +40,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let Task = TaskManager.sharedInstance.getTask(index: indexPath.row)
         let title = Task.complet
         
-        let complat = UITableViewRowAction(style: .normal, title: title) {(_,_) in
-            let cellForIndex = self.tableView.cellForRow(at: indexPath) as! TasktableViewcell
-            TaskManager.sharedInstance.complet(Task: Task)
+        let complat = UITableViewRowAction(style: .normal, title: Task.title) {(_,_) in
+            let cellForIndex = self.tableView.cellForRow(at: indexPath) as! TaskableViewcell
+            TaskManager.sharedInstance
+          
             self.tableView.reloadData()
         }
         
@@ -54,8 +55,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         }
         
-       //  return[deleteAction,checkOutAction]
+        
+        
+        return[deleteAction,deleteAction]
         
     }
+    
+      @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
     
 }

@@ -22,6 +22,8 @@ class AddTaskViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        pickerView.delegate = self
+        pickerView.dataSource = self
         
         
     }
@@ -48,6 +50,7 @@ class AddTaskViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         if (TaskTitleTextField.text?.isEmpty)! {
             let alert = UIAlertController(title: "Error", message: "please input a task title", preferredStyle: .alert)
+             alert.addAction(UIAlertAction(title:"okey!",style:.default))
             self.present(alert,animated: true)
             
         } else{

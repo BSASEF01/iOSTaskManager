@@ -15,7 +15,7 @@
 		27AC19AC20ADEFF0003DA5E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AC19AA20ADEFF0003DA5E1 /* LaunchScreen.storyboard */; };
 		27AC19BC20AE4733003DA5E1 /* taskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC19BB20AE4733003DA5E1 /* taskManager.swift */; };
 		27AC19BE20AE4748003DA5E1 /* taskClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC19BD20AE4748003DA5E1 /* taskClass.swift */; };
-		27AC19C020AE4779003DA5E1 /* taskManagerViewConttroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC19BF20AE4779003DA5E1 /* taskManagerViewConttroller.swift */; };
+		27AC19C020AE4779003DA5E1 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC19BF20AE4779003DA5E1 /* AddTask.swift */; };
 		27AC19C220AE47AE003DA5E1 /* taskmanagerViewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC19C120AE47AE003DA5E1 /* taskmanagerViewcell.swift */; };
 		F10D0096DF9E2C1E8146225F /* Pods_TaskManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787A4423C8B20ADD061A0C3D /* Pods_TaskManager.framework */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		27AC19AD20ADEFF0003DA5E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27AC19BB20AE4733003DA5E1 /* taskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskManager.swift; sourceTree = "<group>"; };
 		27AC19BD20AE4748003DA5E1 /* taskClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskClass.swift; sourceTree = "<group>"; };
-		27AC19BF20AE4779003DA5E1 /* taskManagerViewConttroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskManagerViewConttroller.swift; sourceTree = "<group>"; };
+		27AC19BF20AE4779003DA5E1 /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 		27AC19C120AE47AE003DA5E1 /* taskmanagerViewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskmanagerViewcell.swift; sourceTree = "<group>"; };
 		31604B8D50E24F720319F2F3 /* Pods-TaskManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskManager/Pods-TaskManager.release.xcconfig"; sourceTree = "<group>"; };
 		787A4423C8B20ADD061A0C3D /* Pods_TaskManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +73,7 @@
 			children = (
 				27AC199E20ADEFEE003DA5E1 /* AppDelegate.swift */,
 				27AC19A020ADEFEE003DA5E1 /* ViewController.swift */,
-				27AC19BF20AE4779003DA5E1 /* taskManagerViewConttroller.swift */,
+				27AC19BF20AE4779003DA5E1 /* AddTask.swift */,
 				27AC19BB20AE4733003DA5E1 /* taskManager.swift */,
 				27AC19BD20AE4748003DA5E1 /* taskClass.swift */,
 				27AC19C120AE47AE003DA5E1 /* taskmanagerViewcell.swift */,
@@ -222,7 +222,7 @@
 				27AC19C220AE47AE003DA5E1 /* taskmanagerViewcell.swift in Sources */,
 				27AC19BE20AE4748003DA5E1 /* taskClass.swift in Sources */,
 				27AC19BC20AE4733003DA5E1 /* taskManager.swift in Sources */,
-				27AC19C020AE4779003DA5E1 /* taskManagerViewConttroller.swift in Sources */,
+				27AC19C020AE4779003DA5E1 /* AddTask.swift in Sources */,
 				27AC199F20ADEFEE003DA5E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +370,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TaskManager/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = bersabeh.TaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -385,7 +388,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TaskManager/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = bersabeh.TaskManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

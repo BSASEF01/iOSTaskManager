@@ -20,10 +20,10 @@ class TaskableViewcell: UITableViewCell {
         nameLable.text = task.title
         
         if task.complet {
-            complet.text = "Avaliable"
+            complet.text = "complet"
             complet.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         } else {
-            Incomplet.text = "Not Avaliable"
+            Incomplet.text = "Incomplet"
             Incomplet.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         }
     }
